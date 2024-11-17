@@ -29,13 +29,13 @@ app.post("/create-item", (req, res) => {
     // TODO: code with db here
 });
 
-app.get("/author", function (req, res) {
-    res.render("harid", {user: user});
-})
+app.get("/author", (req, res) => {
+    res.render("author", {user: user});
+});
 
 app.get("/", function (req, res) {
-    res.render("harid", {user: user});
-})
+    res.render("harid" , {user: user});
+});
 
 const server = http.createServer(app); 
 let PORT = 3000;
