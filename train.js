@@ -103,21 +103,19 @@
 
 ///// A-TASK: 
 
-function countLetter(letter,word) {
-    
-    let b = 0;
-    for (let i = 0; i < word.length; i++)  {
-        if (word[i] === letter) {            
-            b ++; 
+// function countLetter(letter,word) {  
+//     let b = 0;
+//     for (let i = 0; i < word.length; i++)  {
+//         if (word[i] == letter) {            
+//             b ++; 
             
-        }
-     }
-    console.log(`Bu so'zda ${b} harif qatnashgan`)
-    if (b == 0) {
-        console.log("Bu harif yo'q")
+//         }
+//      }
+//     console.log(`Bu so'zda ${b} harif qatnashgan`)
+//     if (b == 0) {
+//         console.log("Bu harif yo'q")
     
-    }
-    return b; 
-}
-console.log(countLetter("a", "asadbek"));
-
+//     }
+//     return b; 
+// }
+// console.log(countLetter("a", "asadbek"));
