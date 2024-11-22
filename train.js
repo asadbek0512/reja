@@ -119,3 +119,50 @@
 //     return b; 
 // }
 // console.log(countLetter("a", "asadbek"));
+
+
+
+///// 22.11.2024  b-TASK: 
+/// Birinchi usul
+
+function countLetter1(word) {  
+    let b = 0;
+    for (let i = 0; i < word.length; i++)  {
+        if (word[i] >= "0" && word[i] <= "9") {            
+            b ++; 
+        }
+        
+    }
+    return b;
+}
+const result = countLetter("as6dbek7455");
+console.log("result_1:", result);
+
+//// Ikkinchi usul 
+
+function countLetter(word) {  
+    let b = 0;
+    let beliglar = ['>', '<', '/', ',', '.', '?', '!', '~'];
+
+    for (let i = 0; i < word.length; i++)  {
+        for (let n = 0; n <= 9; n++ ) {
+            if (word[i] == n) {            
+                b ++; 
+            }
+        }
+    }
+
+    for (let i = 0; i < word.length;i++) {   
+        for(let m = 0; m < beliglar.length; m++) {
+            if (beliglar[m] == word[i]) {
+                console.log("Uzur siz belgilar qoshib yubordigiz, bu yerda harif va son qoshing");
+                return;
+            }
+        }
+    }
+    return b; 
+}
+const result2 = countLetter("as6dbek745");
+console.log("result_2:", result2);
+
+
