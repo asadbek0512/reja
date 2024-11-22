@@ -124,7 +124,6 @@
 
 ///// 22.11.2024  b-TASK: 
 /// Birinchi usul
-
 function countLetter1(word) {  
     let b = 0;
     for (let i = 0; i < word.length; i++)  {
@@ -139,7 +138,6 @@ const result = countLetter("as6dbek7455");
 console.log("result_1:", result);
 
 //// Ikkinchi usul 
-
 function countLetter(word) {  
     let b = 0;
     let beliglar = ['>', '<', '/', ',', '.', '?', '!', '~'];
@@ -165,4 +163,16 @@ function countLetter(word) {
 const result2 = countLetter("as6dbek745");
 console.log("result_2:", result2);
 
+/// 3 usul
+function countLetter2(word) {
+    let b = 0;
+    for(let i = 0; i < word.length; i++) {
+        if(!isNaN(word[i])) {
+            b++;
+        }
+    }
+    return b;
 
+}
+const result3 = countLetter2("asdbek45");
+console.log("result_3:", result3);
