@@ -160,7 +160,7 @@ function countLetter(word) {
     }
     return b; 
 }
-const result2 = countLetter("as6dbek745");
+const result2 = countLetter("as6dbek7>45");
 console.log("result_2:", result2);
 
 /// 3 usul
