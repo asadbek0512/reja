@@ -36,9 +36,10 @@ app.post("/create-item", (req, res) => {
     });
 });
 
+
 app.post("/delete-item", (req,res) => {
     const id = req.body.id;
-    db.collection("palans").deleteOne(
+    db.collection("plans").deleteOne(
         {_id: new mongodb.ObjectId(id) },
         function (err,data) {
             res.json({state: "success"});
