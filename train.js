@@ -108,13 +108,13 @@
 //     for (let i = 0; i < word.length; i++)  {
 //         if (word[i] == letter) {            
 //             b ++; 
-            
+
 //         }
 //      }
 //     console.log(`Bu so'zda ${b} harif qatnashgan`)
 //     if (b == 0) {
 //         console.log("Bu harif yo'q")
-    
+
 //     }
 //     return b; 
 // }
@@ -130,7 +130,7 @@
 //         if (word[i] >= "0" && word[i] <= "9") {            
 //             b ++; 
 //         }
-        
+
 //     }
 //     return b;
 // }
@@ -205,22 +205,20 @@
 // lagmon va 6ta cola mavjud!
 
 class Shop {
- 
-    constructor(non, lagmon, olma){
+
+    constructor(non, lagmon, olma) {
         this.non = non;
         this.lagmon = lagmon;
         this.olma = olma;
     }
-
-
- // mthod
+    // mthod
     qoldiq() {
         const moment = require("moment");
         const time = moment().format("HH:mm");
         console.log(`Hozir ${time}da Shopda ${this.non} ta non ${this.lagmon}ta lag'mon va ${this.olma} ta Olma bor`)
     }
-    
-    qabul(mahsulot, qiymat){
+
+    qabul(mahsulot, qiymat) {
         if (mahsulot === "non") {
             this.non += qiymat;
         } else if (mahsulot === "lagmon") {
@@ -232,7 +230,7 @@ class Shop {
         }
     }
 
-    sotish(mahsulot, qiymat){
+    sotish(mahsulot, qiymat) {
         if (mahsulot === "non") {
             this.non -= qiymat;
         } else if (mahsulot === "lagmon") {
@@ -243,12 +241,12 @@ class Shop {
             console.error("Bu mahsulot yoq bizda!");
         }
     }
-}  
-    
+}
 
-const newShop = new Shop(4,5,2);
+
+const newShop = new Shop(4, 5, 2);
 newShop.qoldiq();
-newShop.qabul("non",3);
-newShop.qabul("olma",5)
-newShop.sotish("lagmon",4)
+newShop.qabul("non", 3);
+newShop.qabul("olma", 5)
+newShop.sotish("lagmon", 4)
 newShop.qoldiq();
