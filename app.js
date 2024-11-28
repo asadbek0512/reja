@@ -63,7 +63,10 @@ app.post("/delete-all", (req, res) => {
     if (req.body.delete_all) {
         db.collection("plans").deleteMany(function () {
             res.json({ state: "Hamma rejalar o'chirildi" });
+
         });
+    } else {
+        res.json({ state1: "salom" })
     }
 });
 

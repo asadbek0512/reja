@@ -70,7 +70,7 @@
     margin-bottom: 29.46px;
 }
 
-.main_frame .left_1 .left_1_name{
+.main_frame .left_1 .left_1_name {
     position: relative;
     width: 66.63px;
     height: 20.9px;
@@ -149,7 +149,7 @@
     margin-bottom: 25px;
     margin-top: 39px;
     border: 1.5px solid #f0f0f6;
-}   
+}
 
 /* About */
 .main_frame .left_2_about {
@@ -168,7 +168,8 @@
     align-items: center;
 
 }
-.main_frame .left_2_about .rectangle{
+
+.main_frame .left_2_about .rectangle {
     position: relative;
     display: flex;
     width: 46.21px;
@@ -217,7 +218,7 @@
     background: rgb(255, 180, 0);
 }
 
-.main_frame .left_2_about .available{
+.main_frame .left_2_about .available {
     position: relative;
     color: rgb(126, 185, 66);
     font-family: sans-serif;
@@ -226,7 +227,7 @@
     line-height: 24px;
 }
 
-.main_frame .left_2_about .left_2_address{
+.main_frame .left_2_about .left_2_address {
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -251,6 +252,7 @@
     margin-top: 25px;
     margin-left: 45px;
 }
+
 .language {
     position: relative;
     width: 95px;
@@ -277,12 +279,14 @@
     letter-spacing: 0%;
 
 }
+
 .line {
     position: relative;
     width: 220px;
     height: 4px;
     margin-top: 6px;
 }
+
 .line_100 {
     position: relative;
     width: 100%;
@@ -352,6 +356,7 @@
     letter-spacing: 0%;
 
 }
+
 .line_skills {
     position: relative;
     width: 220px;
@@ -412,7 +417,7 @@
 .extra_lang {
     position: relative;
     margin-top: 10px;
-    margin-left: 5px; 
+    margin-left: 5px;
     color: rgb(118, 118, 118);
     font-family: sans-serif;
 }
@@ -421,7 +426,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    gap: 10px; 
+    gap: 10px;
     width: 180px;
     height: 24px;
     margin-top: 10px;
@@ -433,7 +438,7 @@
     position: relative;
     width: 971px;
     height: 463.09px;
-    bottom:  25px;
+    bottom: 25px;
     background-color: white;
 }
 
@@ -460,7 +465,7 @@
     text-align: left;
 }
 
-.service_desc{
+.service_desc {
     position: absolute;
     width: 424.44px;
     height: 85.61px;
@@ -477,7 +482,7 @@
     text-transform: capitalize;
 }
 
-.pol{
+.pol {
     position: absolute;
     width: 16.02px;
     height: 15.57px;
@@ -486,6 +491,7 @@
     box-sizing: border-box;
     border: 2px solid rgba(255, 46, 0, 0.8);
 }
+
 .pol2 {
     position: absolute;
     width: 15.93px;
@@ -539,7 +545,7 @@
     border: 2px solid rgba(5, 255, 0, 0.8);
 }
 
-.button1{
+.button1 {
     position: absolute;
     width: 154px;
     height: 51px;
@@ -561,39 +567,40 @@
     /* Yellow */
     background: rgb(255, 180, 0);
 }
+
 .my_services {
     text-align: center;
     padding: 20px;
-  }
+}
 
-  .my_ser {
+.my_ser {
     color: rgb(43, 43, 43);
     font-family: sans-serif;
     font-size: 32px;
     font-weight: 700;
     margin-top: 20px;
     margin-bottom: 10px;
-  }
+}
 
-  .about_me {
+.about_me {
     color: rgb(118, 118, 118);
     font-family: sans-serif;
     font-size: 15px;
     font-weight: 400;
     text-align: center;
     margin-bottom: 30px;
-  }
+}
 
-  /* My servvices */
+/* My servvices */
 
-  .services_container {
+.services_container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-  }
+}
 
-  .web_dev {
+.web_dev {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -604,31 +611,31 @@
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  }
+}
 
 
-  .blog1 {
+.blog1 {
     position: relative;
     text-align: center;
     margin-top: 10px;
-    margin-left: 5px; 
+    margin-left: 5px;
     color: rgb(118, 118, 118);
     font-family: sans-serif;
 }
 
 
-  .web_icon {
+.web_icon {
     width: 50px;
     height: 50px;
     margin-bottom: 15px;
-  }
+}
 
-  .h2_web {
+.h2_web {
     font-size: 18px;
     font-weight: bold;
     color: #333;
     margin-bottom: 5px;
-  }
+}
 
 /* Rigth fream */
 

@@ -50,6 +50,8 @@ document.addEventListener("click", function (e) {
                 .catch((err) => {
                     console.log("Iltimos qaytadan harakat qiling!");
                 });
+        } else {
+            alert("salom")
         }
     }
 
@@ -80,8 +82,11 @@ document.addEventListener("click", function (e) {
 
 document.getElementById("clean-all").addEventListener("click", function () {
     axios.post("/delete-all", { delete_all: true }).then(response => {
-        alert(response.data.state);
-        document.location.reload();
+        if (confirm(response.data.state)) {
+            document.location.reload();
+        } else {
+            alert(response.data.state)
+        }
     });
 });
 
