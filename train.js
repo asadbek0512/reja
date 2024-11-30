@@ -280,4 +280,20 @@ function checkContent(bir, ikki) {
 
     return bir1 === bir2
 };
-console.log(checkContent("mitgroup", "gmtiprou")) 
+console.log(checkContent("mitgroup", "gmtiprou"))
+
+
+// E-TASK: 
+// Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni 
+// teskari qilib return qilsin.
+// MASALAN: getReverse("hello") return qilsin "olleh"
+
+function getReverse(word) {
+    if (!isNaN(word)) {
+        console.log("Siz matin kiritishingiz kerak!")
+    }
+
+    let word1 = word.split('').reverse().join('');
+    return word1;
+};
+console.log(getReverse("hello"));

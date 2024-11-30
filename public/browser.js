@@ -51,7 +51,7 @@ document.addEventListener("click", function (e) {
                     console.log("Iltimos qaytadan harakat qiling!");
                 });
         } else {
-            alert("salom")
+            alert("Ma'lumot o'chirilmadi!!")
         }
     }
 
