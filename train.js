@@ -297,3 +297,25 @@ function getReverse(word) {
     return word1;
 };
 console.log(getReverse("hello"));
+
+
+// TASK F
+// Yagona string argumentga ega findDoublers nomli function tuzing
+// Agar stringda bittadan ortiq bir xil harflar ishtirok etgan bo'lsa
+// true yokida false natija qaytarsin.
+// MASALAN: findDoublers("hello"); natija true qaytadi. Sababi ikki marotaba takrorlangan 'll' harfi mavjud!
+
+function findDoublers(str) {
+    let seen = new Set();
+
+    for (let letter of str) {
+        if (seen.has(letter)) {
+            return true;
+        }
+        seen.add(letter);
+    }
+
+    return false;
+}
+
+console.log(findDoublers("hello"));
