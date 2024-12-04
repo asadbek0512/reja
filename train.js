@@ -306,13 +306,13 @@ console.log(getReverse("hello"));
 // MASALAN: findDoublers("hello"); natija true qaytadi. Sababi ikki marotaba takrorlangan 'll' harfi mavjud!
 
 function findDoublers(str) {
-    let seen = new Set();
+    let b = new Set();
 
     for (let letter of str) {
-        if (seen.has(letter)) {
+        if (b.has(letter)) {
             return true;
         }
-        seen.add(letter);
+        b.add(letter);
     }
 
     return false;
