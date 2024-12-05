@@ -270,17 +270,17 @@
 // har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin
 // MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
 
-function checkContent(bir, ikki) {
-    if (!isNaN(bir) || !isNaN(ikki)) {
-        console.log("Siz matin kiritishingiz kerak!")
-    }
+// function checkContent(bir, ikki) {
+//     if (!isNaN(bir) || !isNaN(ikki)) {
+//         console.log("Siz matin kiritishingiz kerak!")
+//     }
 
-    let bir1 = bir.split('').sort().join('');
-    let bir2 = ikki.split('').sort().join('');
+//     let bir1 = bir.split('').sort().join('');
+//     let bir2 = ikki.split('').sort().join('');
 
-    return bir1 === bir2
-};
-console.log(checkContent("mitgroup", "gmtiprou"))
+//     return bir1 === bir2
+// };
+// console.log(checkContent("mitgroup", "gmtiprou"))
 
 
 // E-TASK: 
@@ -288,15 +288,15 @@ console.log(checkContent("mitgroup", "gmtiprou"))
 // teskari qilib return qilsin.
 // MASALAN: getReverse("hello") return qilsin "olleh"
 
-function getReverse(word) {
-    if (!isNaN(word)) {
-        console.log("Siz matin kiritishingiz kerak!")
-    }
+// function getReverse(word) {
+//     if (!isNaN(word)) {
+//         console.log("Siz matin kiritishingiz kerak!")
+//     }
 
-    let word1 = word.split('').reverse().join('');
-    return word1;
-};
-console.log(getReverse("hello"));
+//     let word1 = word.split('').reverse().join('');
+//     return word1;
+// };
+// console.log(getReverse("hello"));
 
 
 // TASK F
@@ -305,17 +305,38 @@ console.log(getReverse("hello"));
 // true yokida false natija qaytarsin.
 // MASALAN: findDoublers("hello"); natija true qaytadi. Sababi ikki marotaba takrorlangan 'll' harfi mavjud!
 
-function findDoublers(str) {
-    let b = new Set();
+// function findDoublers(str) {
+//     let b = new Set();
 
-    for (let letter of str) {
-        if (b.has(letter)) {
-            return true;
+//     for (let letter of str) {
+//         if (b.has(letter)) {
+//             return true;
+//         }
+//         b.add(letter);
+//     }
+
+//     return false;
+// }
+
+// console.log(findDoublers("hello"));
+
+// TASK G:
+// Yagona parametrga ega function tuzing.
+// Va bu function parametr orqalik integer ma'lumot turlariga ega bo'lgan bir arrayni qabul qilsin.
+// Ushbu function bizga arrayning tarkibidagi birinchi eng katta qiymatning indeksini qaytarsin.
+// MASALAN: getHighestIndex([5, 21, 12, 21 ,8]); return qiladi 1 sonini
+// Yuqoridagi misolda, birinchi indeksda 21 joylashgan.
+// Va bu 21 soni arrayning tarkibidagi birinchi eng katta son hisobladi va bizga uning indeksi 1 qaytadi.
+
+function getHighestIndex(array) {
+    let qiymat = 0;
+    let index = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] > qiymat) {
+            qiymat = array[i];
+            index = i;
         }
-        b.add(letter);
     }
-
-    return false;
+    return index;
 }
-
-console.log(findDoublers("hello"));
+console.log(getHighestIndex([5, 21, 12, 24, 8]));
